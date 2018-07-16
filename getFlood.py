@@ -343,7 +343,7 @@ if newFiles:
     msg['To'] = ', '.join(emailAddresses)
 
 
-    text = MIMEText("http://140.90.218.62/tools/getFlood/projects/"+project_name+"\n\n\nLatest Raw image, cloud free image and last 10 cloud free images animated are attached. The latest image has clound cover: "+str(cloudy)+"%")
+    text = MIMEText("http://140.90.218.62/tools/getFlood/projects/"+project_name+"\n\n\nLatest Raw image, cloud free image and last 10 cloud free images animated are attached. The latest image has cloud cover: "+str(cloudy)+"%")
     msg.attach(text)
 
     if os.path.isfile(project+project_name+"_latest_raw.tif"):
